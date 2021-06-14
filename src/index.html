@@ -6,6 +6,9 @@
     <title>CrazyBaby</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="icon" href="./images/favicon.ico">
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+    </script>
   </head>
   <body>
     <header class="header">
@@ -247,9 +250,27 @@
       <a href="#" class="footer-link-home"></a>
       <a href="#" class="link-go-top"></a>
       <div class="footer-links">
-        <a href="https://www.facebook.com/hicrazybaby/" class="link-our-sites"></a>
-        <a href="https://twitter.com/crazybabyaudio" class="link-our-sites"></a>
-        <a href="https://www.instagram.com/crazybaby/" class="link-our-sites"></a>
+        <a
+          href="https://www.facebook.com/hicrazybaby/"
+          class="link-our-sites"
+          target="_blank"
+          rel="noopener"
+        >
+        </a>
+        <a
+          href="https://twitter.com/crazybabyaudio"
+          class="link-our-sites"
+          target="_blank"
+          rel="noopener"
+        >
+        </a>
+        <a
+          href="https://www.instagram.com/crazybaby/"
+          class="link-our-sites"
+          target="_blank"
+          rel="noopener"
+        >
+        </a>
       </div>
       <p class="footer-text">&copy; 2019 All rights reserved. Terms of Use &
         Privacy
@@ -260,7 +281,15 @@
 
 
 
-
+    <script type="text/javascript">
+      $(function () {
+        $("a[href^='#']").click(function () {
+          var _href = $(this).attr("href");
+          $("html, body").animate({ scrollTop: $(_href).offset().top - 80 + "px" });
+          return false;
+        });
+      });
+    </script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

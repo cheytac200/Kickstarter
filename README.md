@@ -1,5 +1,5 @@
 
-To view the code, go to the branch "develop-2"
+# To view the code, go to the branch "develop-2"
 
 # Kickstarter landing page
 
